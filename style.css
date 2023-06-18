@@ -6,17 +6,16 @@
 
 body {
     background: #121212;
-    color: white;
+    color: #a0a0a0;
 }
 
 body h1 {
-    opacity: 60%;
     margin-left: 10px;
     margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 body h2 {
-    opacity: 60%;
     margin-left: 10px;
 }
 
@@ -43,13 +42,14 @@ ul {
     font-size: 30px;
     font-family: "Roboto Mono", monospace;
     font-weight: 400;
-    color: white;
-    opacity: 85%;
+    color: #e0e0e0;
     padding: 0 15px;
  }
 
  .mainnav li a:hover {
     background-color: #363636;
+    color: #8cb3d9;
+    opacity: 100%;
  }
 
  /*Right side of navigation bar*/
@@ -65,16 +65,13 @@ ul {
     font-size: 15px;
     font-family: "Roboto Mono", monospace;
     font-weight: 400;
-    color: white;
-    opacity: 85%;
+    color: #e0e0e0;
     padding: 0 15px;
  }
 
  .rightnav li a:hover {
-    color: #BB86FC;
+    background-color: #363636;
+    color: #8cb3d9;
+    opacity: 100%;
  }
 
-/*2nd bar on index page, includes header & accordion menu*/
-.bar2 {
-    margin-top: 5px;
-}
