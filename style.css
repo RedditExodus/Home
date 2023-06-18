@@ -12,6 +12,7 @@ body {
 body h1 {
     opacity: 60%;
     margin-left: 10px;
+    margin-top: 5px;
 }
 
 body h2 {
@@ -30,14 +31,14 @@ ul {
 
 }
 
- ul li {
+.mainnav li {
     list-style: none;
     display: inline-block;
     float: left;
     line-height: 60px;
  }
 
- ul li a {
+ .mainnav li a {
     display: block;
     font-size: 30px;
     font-family: "Roboto Mono", monospace;
@@ -47,76 +48,33 @@ ul {
     padding: 0 15px;
  }
 
- ul li a:hover {
+ .mainnav li a:hover {
     background-color: #363636;
+ }
+
+ /*Right side of navigation bar*/
+ .rightnav li {
+    list-style: none;
+    display: inline-block;
+    float: right;
+    line-height: 60px;
+ }
+
+ .rightnav li a {
+    display: block;
+    font-size: 15px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    color: white;
+    opacity: 85%;
+    padding: 0 15px;
+ }
+
+ .rightnav li a:hover {
+    color: #BB86FC;
  }
 
 /*2nd bar on index page, includes header & accordion menu*/
 .bar2 {
-
+    margin-top: 5px;
 }
-
- /*Accordion menu*/
- .accordion {
-    margin: 0;
-    width: 600px;
- }
-
- .accordion li {
-    list-style: none;
-    width: 640px;
-    margin: 15px;
-    padding: 10px;
-    border-radius: 8px;
-    background: #2d2d2d;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.7),
-                -6px -6px 10px -1px rgba(252, 252, 252, 0.085)
-
- }
-
- .accordion li label {
-    display: flex;
-    align-items: center;
-    padding: 0px;
-    opacity: 60%;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
- }
-
- label::before {
-    content: '+';
-    margin-right: 10px;
-    font-size: 24px;
-    font-weight: 600;
- }
-
- input[type="checkbox"] {
-    display: none;
- }
-
- /*Content formatting - probably not needed.
- .accordion .content {
-    color: #555;
-    padding: 0 10px;
-    line-height: 26px;
- }
- */
-
- /*Only essentials from content.*/
- .accordion .content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
- }
-
- .accordion input[type="checkbox"]:checked + label + .content {
-    max-height: 1130px;
-    padding: 10px 10px 20px;
- }
-
- .accordion input[type="checkbox"]:checked + label::before {
-    content: '-';
- }
-
- /*Testing*/
